@@ -10,7 +10,9 @@ public class App {
        double sum = 1;
        sum = sum + 1/5;
        System.out.println(sum);
-
+       double errr = 0.00000000000001;
+       System.out.println(errr);
+       
     }
     public static int Abselute(int intt)
     {
@@ -71,6 +73,12 @@ public class App {
         
         return Xone;
     }
+    /**Newtons method square root
+     * @param c : double value to find an estimated square root for
+     * @implNote I think err = 1e-15 means 0.0000000000000001      double errr = 0.00000000000001; System.out.println(errr); Output: 1e-14
+     *
+     * @return : The square root of the parameter
+     */
     public static double sqrt(double c)
     {
         if (c < 0) return Double.NaN;
